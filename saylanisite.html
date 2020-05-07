@@ -10,13 +10,10 @@
             padding: 0;
             margin: 0;
         }
-        .body-style{
-            padding-left: 15%;
-            padding-right: 15%;
-        }
+        
         .button{
-            font-size: 12px;
-            padding: 10px;
+            font-size: 10px;
+            padding: 3px 10px 3px 10px; 
         }
         marquee{
             margin: 5px;
@@ -26,10 +23,7 @@
             background-color: #4c8b0c;
             height: 1px;
         }
-        .carousel-inner img {
-            width: 100%;
-            height: 500px;
-        }
+        
         .crd{
             background-color: white;
             margin: 25px 0 0 0;
@@ -47,19 +41,48 @@
             padding-left: 5px;
         }
         .grid-container{
-            display: grid;
+            display: inline-grid;
             grid-template-columns: auto auto auto auto auto;
-            padding:0;
-            margin: 0;
+            grid-column-gap:2px;
         }
+        @media screen and (min-width: 768px) {
+            .body-style{
+            padding-left: 15%;
+            padding-right: 15%;   
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+            .body-style{
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 200px;
+        }
+        }
+
+
+        @media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
     </style>
 </head>
 <body>
     <header>
-        <section class="body-style bg-primary text-light">
+        <section class="body-style bg-primary text-light pt-2">
             <div class="row">
                 <div class="col-md-2 col-sm-12">
-                    <ul class="list-inline text-center">
+                    <ul class="list-inline text-center ">
                         <li class="list-inline-item">
                             <a href="#">
                                 <li class="fab fa-facebook"></li>
@@ -82,20 +105,20 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-sm-12 text-center align-self-center">
+                <div class="col-md-6 col-sm-12 text-center">
                     <span style="font-size:13px ;">Millions of people's life has changed, millions more awaiting your donation</span>
                 </div>
-                <div class="col-md-4 col-sm-12 text-center align-self-center">
-                    <span class="bg-light"><a class="text-success button" href="#">UK Donor</a></span>
-                    <span class="bg-light"><a class="text-success button" href="#">Donate Now</a></span>
-                    <span class="bg-light"><a class="text-success button" href="#">SMIT Results</a></span>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <button class="button"><a class="text-success" href="#">UK Donor</a></button>
+                    <button class="button"><a class="text-success" href="#">Donate Now</a></button>
+                    <button class="button"><a class="text-success" href="#">SMIT Result</a></button>
                 </div>
             </div>
         </section>
         
         <section class="body-style">
             <div class="row">
-                <nav class="navbar navbar-expand-md" style="width: 100%;">
+                <nav class="navbar navbar-expand-md navbar-light" style="width: 100%;">
                     <img src="images/Saylani-logo.png" alt="Saylani-logo" style="width:150px; height: 50px;">
                     <button class="navbar-toggler" color="black" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                       <span class="navbar-toggler-icon"></span>
@@ -159,12 +182,12 @@
         </div>
         <div class="body-style pt-5 pb-5" style="background-color: rgb(247, 247, 247);">
             <div class="row">
-                <div class="col-md-12 pl-5 pr-5">
+                <div class="col-md-12 pl-md-5 pr-md-5">
                     <h3 class="col-12 text-center" ><font color="#316DC3">INTRO</font><font color="#4c8b0c">DUCTION</font></h3>
                     <div class="col-12 text-center">
                         <hr class="hr list-inline-item m-0 p-0" style="vertical-align: bottom;"><img style="vertical-align: top;"  src="https://www.saylaniwelfare.com/public_html/images/saylani/favicon.png" alt=""><hr class="hr list-inline-item m-0 p-0" style="vertical-align: bottom;">
                     </div>    
-                    <P class="pt-md-3 pb-md-5" style="font-size: 13px; text-align: justify; opacity: 0.7;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International 
+                    <P class="pt-3" style="font-size: 13px; text-align: justify; opacity: 0.7;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International 
                         Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a 
                         chance to live a dignified life and spreading happiness.<br><br>
                         We are an organization that believes in lighting up the lives of underprivileged people across the world. 
@@ -217,7 +240,7 @@
                     </div>               
                 </div>
             </div>
-            <div class="row pt-5">
+            <div class="row pt-2">
                 <div class="col-md-4">
                     <div class="crd">
                         <img height="50px" src="https://www.saylaniwelfare.com/public_html/images/saylani/icons/onlinesadqah.png" alt="">
@@ -257,7 +280,6 @@
             </div>
         </div>
         <div class="body-style">
-
             <div class="row pt-5 pb-5">
                 <div class="col-md-8">
                     <h4 style="color:#316DC3 ;">MISSION AND UPCOMMING PROJECTS</h4>
@@ -296,30 +318,54 @@
                 </div>
             </div>
 
-            <div class="row pb-5 pt-5">
+            <div class="row" style="padding-top: 20px; padding-bottom: 150px;">
                 <div class="col-12 text-center pb-4">
                     <h3><font color="#316DC3">IMAGE</font><font color="#4c8b0c"> GALLERY</font></h3>
                     <div class="col-12 text-center">
                         <hr class="hr list-inline-item m-0 p-0" style="vertical-align: bottom;"><img style="vertical-align: top;"  src="https://www.saylaniwelfare.com/public_html/images/saylani/favicon.png" alt=""><hr class="hr list-inline-item m-0 p-0" style="vertical-align: bottom;">
                     </div>    
                 </div>
-                <div class="col-12">
-                    <div class="grid-container">
-                        <img height="120px" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg" alt="">
-                        <img height="120px" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/food.jpg" alt="">
-                        <img height="120px" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/hazrat.jpg" alt="">
-                        <img height="120px" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg" alt="">
-                        <img height="120px" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/hazrat2.jpg" alt="">
+<!-- Page Content -->
+            <div class="container">  
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg" alt="">
+                            </a>
                     </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/food.jpg" alt="">
+                            </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/hazrat.jpg" alt="">
+                            </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="https://www.saylaniwelfare.com/public_html/images/saylani/gallery/rashan2.jpg" alt="">
+                            </a>
+                    </div>      
                 </div>
             </div>
         </div>
+
+        
+
+
+
+        
+
+
+
     </section> 
 
     <footer>
         <div class="body-style bg-dark text-light">
             <div class="row pt-5 pb-5">
-                <div class="col" style="opacity: 0.7;">
+                <div class="col-md-4 col-sm-12" style="opacity: 0.7;">
                     <h1>&nbsp</h1>
                     <p>Head Office,A-25, Bahadurabad Chowrangi Karachi, Pakistan
                     </p>
@@ -332,10 +378,10 @@
                         <li><li class="fa fa-globe" color="#4c8b0c"></li>(+0092-213) 4130786-90</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-md-4 col-sm-12">
                     <h6>Useful Links</h6><hr class="hr">
                 </div>
-                <div class="col">
+                <div class="col-md-4 col-sm-12">
                     <h6>Connect With US</h6>
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -365,7 +411,7 @@
         </div>
         <div class="body-style bg-primary">
             <div class="row">
-                <div>
+                <div class="col-sm-12">
                     <p>Copyright © 2020 Saylani Welfare </p>
                 </div>
             </div> 
@@ -382,6 +428,10 @@ $('.count').each(function () {
       $this.text(Math.ceil(this.Counter));
     }
   });
+});
+// MDB Lightbox Init
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
