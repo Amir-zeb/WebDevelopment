@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tsstylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <title>ABCbusses</title>
+</head>
+<body>
+  <header class="col"> 
+    <div class="row bgcolor">
+      <div class="container pt-2">
+        <div class="col-md-6 col-sm-12 floatLeft">
+          <div class="textCenter">
+            <ul>
+              <a href="#" class="icon"><li class="fa fa-envelope icon"></li>CONTACT@abcbusses.com</a>
+            </ul>   
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 floatRight">
+          <div class="textCenter textRight">
+            <ul>
+              <a href="#"><li class="fab fa-facebook icon"></li></a>
+              <a href="#"><li class="fab fa-twitter icon"></li></a>
+              <a href="#"><li class="fab fa-instagram icon"></li></a>
+              <a href="#"><li class="fab fa-whatsapp icon"></li></a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+      <div class="row nav-bgcolor">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+              <img src="../images/abcbusses.png" alt="logo" width="100px">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapsiblenavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="colapsiblenavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="transportsite.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="busesnews.html">Buses News</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tsaboutus.html">About Us</a></li>
+
+                    <!--
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">INFORMATIONS</a>
+                      <ul class="list-inline dropdown-menu">
+                        <li class="nav-item"><a class="nav-link" href="#">BUSES NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">BUSES TIMING</a></li>
+                      </ul>
+                    </li>
+                    -->
+                    
+                    <li class="nav-item"><a class="nav-link" href="tscontactus.html">Contact Us</a></li>                                
+                </ul>
+                <div class="mrg">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" type="button" class="btn lgbtn" data-toggle="modal" data-target="#login-modal">LogIn</a></li> 
+                </ul> 
+                </div>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+</header>
+
+  
+ <!-- Log-in Form -->
+ <div class="modal" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">LogIn</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body m-5">
+          <label class="col-form-label">Email</label> 
+          <input class="form-control " type="email" placeholder="Enter Email"> 
+          <label class="col-form-label" for="">Password</label> 
+          <input class="form-control" type="password" name="pass" placeholder="Enter Password">
+          <a type="button" class="crbtn" data-dismiss="modal" data-toggle="modal" data-target="#signup-modal">Create an Account</a>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <input class="btn subbtn bg-primary text-light" type="submit" value="LogIn">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- signup form -->
+  <div class="modal" id="signup-modal" width="500px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">SignUp</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group row">
+            <label class="col-form-label col-md-3 col-sm-12" class="">Name</label>
+            <input class="form-control col-md-3 col-sm-12 mr-md-2" type="text" placeholder="First Name">
+            <input class="form-control col-md-3 col-sm-12 mb-sm-2" type="text" placeholder="Last Name">
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Email</label>
+            <input class="form-control col-md-3 col-sm-12" type="email" name="" id="" placeholder="Enter Email">
+          </div>
+          
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Password</label>
+            <input class="form-control col-md-3 col-sm-12" type="password" name="" id="" placeholder="Enter Password">
+          </div>
+          
+          <div class="form-group row">
+            <label for="" class="col-form-label col-md-3 col-sm-12">Comfirm Password</label>
+            <input class="form-control col-md-3 col-sm-12" type="password" name="" id="" placeholder="Confirm Password">
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <input class="btn subbtn bg-primary text-light" type="submit" value="SignUp">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <section class="wrapper">
+    <div class="container pb-5">
+        <div>
+            <div class="row">
+              <ol class="col-12 breadcrumb">
+                  <li class="breadcrumb-item"><a href="transportsite.html">Home</a></li>
+                  <li class="breadcrumb-item active">Purchase Policy</li>
+              </ol>
+              <div class="col-12">
+                 <h3>Purchase Policy</h3>
+                 <hr>
+              </div>
+            </div>
+          </div>
+        <div class="col-12">
+            <p class="text-justify">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed nunc ullamcorper, laoreet magna at, porttitor nibh. Aenean mollis ex eget convallis auctor. Nullam egestas lorem et libero aliquam bibendum. Donec dignissim orci sit amet vehicula eleifend. Praesent pellentesque magna nunc, eget finibus risus blandit eget. Suspendisse potenti. Maecenas ut diam magna. Cras eu elit lorem. Duis interdum massa vel hendrerit ornare. Pellentesque pharetra scelerisque purus ac auctor. Proin ante leo, gravida a est in, euismod porttitor lectus. Curabitur nec metus mi.<br>
+                
+                Suspendisse sed tortor vitae magna rhoncus viverra at sed diam. Nam scelerisque odio sapien, in lobortis augue rutrum nec. Maecenas aliquam ante id ornare molestie. Sed lorem orci, faucibus id vestibulum eget, luctus eget mauris. Cras auctor rhoncus neque, non placerat est interdum at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam quis ullamcorper massa. Sed vehicula, purus a ultricies tincidunt, massa ante porta erat, eu iaculis metus purus vel libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum non velit at magna condimentum tempus in ut urna. Fusce et neque in leo fringilla gravida ut sed mi. Curabitur nec laoreet risus. Fusce finibus ligula eget semper scelerisque.<br>
+                
+                Aliquam tincidunt ac erat sit amet finibus. Vivamus vulputate pharetra dignissim. In sed laoreet nulla. Duis luctus et est a feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia faucibus est, id fringilla turpis imperdiet et. Morbi et erat ante.<br>
+                
+                In imperdiet dictum ligula, et pellentesque diam volutpat at. Phasellus non faucibus felis, in suscipit risus. Praesent ultricies sagittis justo, ut efficitur ante. Ut vitae blandit ipsum. Aliquam erat volutpat. Sed quis ornare tellus, sed mattis lacus. Mauris tempus vehicula ipsum.<br>
+                
+                Donec interdum pharetra sem, eu bibendum nibh pretium eget. Nam quis nibh sem. Ut id pharetra tellus. Pellentesque bibendum, ipsum et porttitor ornare, ligula erat vulputate est, a vulputate augue eros id urna. Ut a venenatis elit. Fusce eget dictum lacus, eu lacinia dui. Sed pellentesque aliquam erat at hendrerit.<br>
+             </p>
+        </div>
+    </div>
+</section>
+    
+    <footer style="border:1px solid rgba(29, 71, 69, 0.5);">
+        <div class="container">
+            <section>
+                <div class="row pt-5">
+                    <div class="col-md-6 col-sm-12">
+                        <h4><b>QUICK LINKS</b></h4>
+                        <hr class="hr">
+                        <ul class="navbar-nav ">
+                            <li><a href="transportsite.html">Home</a></li>
+                            <li><a href="tsaboutus.html">About Us</a></li>
+                            <li><a href="tsfaq.html">FAQ's</a></li>
+                            <li><a href="tspripolicy.html">Privacy Policy</a></li>
+                            <li><a href="tsppolicy.html">Purchase Policy</a></li>
+                            <li><a href="tscontactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4><b>Follow Us</b></h4>
+                        <hr class="hr">
+                        <ul>
+                            <a href="#"><li class="fab fa-facebook icon"></li></a>
+                            <a href="#"><li class="fab fa-twitter icon"></li></a>
+                            <a href="#"><li class="fab fa-instagram icon"></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+              <hr class="hr2">
+                <div class=" bgcolor">
+                    <p class="text-center">Copyright © 2020 ABC Buses | All Rights Reserved.</p>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
